@@ -1,0 +1,216 @@
+@import './config';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-titanCBD {
+    background: #00aeff;
+}
+
+.bg-becky-stylist {
+    background: #eb0eb4;
+}
+
+body {
+    font-size: 10px;
+    line-height: 3rem;
+    background: rgb(0, 0, 0);
+    transition: all .5s ease-in;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+header {
+    padding: 1rem;
+    height: 50vh;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(163deg, rgba(0,0,0,0.8609725140056023) 20%, rgba(17,16,80,1) 40%, rgba(215,97,8,1) 80%);
+    color: #fff;
+    transform: scale(0.95);
+
+    #header-logo {
+        width: 25rem;
+    }
+
+    #header-text-box {
+        padding: 1.5rem;
+        position: absolute;
+        width: 50%;
+        right: 0;
+
+        h1 { 
+            padding: 1rem 0;
+            font-size: 4rem;
+            font-family: $headline-text;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: $standard-text;
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
+    }
+    .social-icons {
+        position: absolute;
+        bottom: 1rem;
+
+        .social-icon {
+            margin: 0 1rem;
+            height: 4rem;
+            width: 4rem;
+            color: #fff;
+            transition: all .5s ease-out;
+        }
+
+        .social-icon:hover {
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}
+
+.main-content {
+    position: absolute;
+    margin: 48vh 10% 5% 10%;
+    width: 80%;
+    z-index: 10;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+
+    .about-content {
+        width: 40%;
+        color: #fff;
+
+        .about-me {
+            padding: 1rem;
+        }
+    }
+
+    .projects-content {
+        width: 60%;
+        background: #fff;
+
+        .latest-projects {
+            right: 5rem;
+            padding: 1.2rem;
+            position: absolute;
+            z-index: 2;
+            background: $primary-color;
+            color: #fff;
+            transform: translateY(-50%);
+        }
+        
+        .project {
+            height: 50vh;
+            color: white;
+            position: relative;
+
+            .container {
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .project-buttons {
+                position: absolute;
+                top: 10%;
+                right: 0;
+                z-index: 511;
+                display: flex;
+                flex-direction: column;
+                transform: translateX(50%);
+
+                .project-btn {
+                    margin: 1.5rem 0;
+                    padding: .5rem;
+                    font-size: 2rem;
+                    background: $primary-color;
+                    border: 2px solid white;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+            }
+
+            .project-info {
+                height: 100%;
+                width: 100%;
+                z-index: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                color: white;
+                transform: translateX(100%);
+                transition: all .6s ease-in;
+
+                
+
+                img {
+                    max-height: 80%;
+                    width: 40%;
+                    object-fit: contain;
+                }
+
+                .project-info-text {
+                    padding: 1rem 3rem;
+                    width: 60%;
+
+                    p {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                &.show {
+                    transform: translateX(0);
+                }
+            }
+
+        }
+
+        #titanCBD {
+            $titan-color: #00aeff;
+            border: 10px solid $titan-color;
+            background: url('/assets/images/titanCBD.png') no-repeat;
+            background-size: cover;
+
+            .project-info {
+                background: $titan-color;
+            }
+            
+
+            .btn {
+                background: $titan-color;
+                // color: black;
+            }
+        }
+
+        #becky-stylist {
+            $becky-color: #eb0eb4;
+            border: 10px solid $becky-color;
+            background: url('/assets/images/becky.png') no-repeat;
+            background-size: cover;
+
+            .project-info {
+                background: $becky-color;
+            }
+            
+
+            .btn {
+                background: $becky-color;
+                // color: black;
+            }
+        }
+
+    }
+}

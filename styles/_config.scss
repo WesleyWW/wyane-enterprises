@@ -1,0 +1,41 @@
+$primary-color: #1a3759;
+$secondary-color: #d76108;
+$accent-color:#8dcaff;
+
+$headline-text: 'Acme', sans-serif;
+$standard-text: 'Lato', sans-serif;
+
+h1 {
+    font-size: 3rem;
+    font-family: $headline-text;
+}
+h2 {
+    font-size: 2rem;
+    font-family: $headline-text;
+}
+h3 {
+    font-size: 1.6rem;
+    font-family: $headline-text;
+}
+
+a, p {
+    font-size: 1.5rem;
+    font-family: $standard-text;
+}
+
+section {
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.btn {
+    color: #fff;
+    background: rgb(26,55,89);
+    font-size: 1.4rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    border: 3px solid #fff;
+    border-radius: 20rem;
+}
+
