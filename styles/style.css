@@ -58,9 +58,13 @@ section {
   background: #eb3007;
 }
 
+.bg-sortagram {
+  background: #333;
+}
+
 body {
   line-height: 2rem;
-  background: white;
+  background: black;
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
 }
@@ -316,7 +320,7 @@ header .social-icons .social-icon:hover {
 
 .main-content .projects-content #titanCBD {
   border: 10px solid #00aeff;
-  background: url("/assets/images/titanCBD.png") no-repeat;
+  background: url("/assets/images/titanCBD.png") no-repeat center top;
   background-size: cover;
 }
 
@@ -326,7 +330,7 @@ header .social-icons .social-icon:hover {
 
 .main-content .projects-content #becky-stylist {
   border: 10px solid #eb0eb4;
-  background: url("/assets/images/becky.png") no-repeat;
+  background: url("/assets/images/becky.png") no-repeat center top;
   background-size: cover;
 }
 
@@ -336,7 +340,7 @@ header .social-icons .social-icon:hover {
 
 .main-content .projects-content #mt-blog {
   border: 10px solid #00637c;
-  background: url("/assets/images/mt-blog.png") no-repeat;
+  background: url("/assets/images/mt-blog.png") no-repeat center;
   background-size: cover;
 }
 
@@ -346,7 +350,7 @@ header .social-icons .social-icon:hover {
 
 .main-content .projects-content #cocina-ama {
   border: 10px solid #eb3007;
-  background: url("/assets/images/cocina-ama.png") no-repeat;
+  background: url("/assets/images/cocina-ama.png") no-repeat center top;
   background-size: cover;
 }
 
@@ -354,13 +358,14 @@ header .social-icons .social-icon:hover {
   background: #eb3007;
 }
 
-#footer-logo {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 20em;
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
+.main-content .projects-content #sortagram {
+  border: 10px solid #333;
+  background: url("/assets/images/sortagram.png") no-repeat center top;
+  background-size: cover;
+}
+
+.main-content .projects-content #sortagram .project-info {
+  background: #333;
 }
 
 footer {
@@ -381,6 +386,11 @@ footer {
 }
 
 footer #footer-logo {
-  width: 20em;
+  position: absolute;
+  left: 10rem;
+  bottom: 0;
+  width: 15em;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
 }
 /*# sourceMappingURL=style.css.map */

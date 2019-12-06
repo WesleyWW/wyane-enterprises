@@ -51,6 +51,14 @@ document.addEventListener("DOMContentLoaded", function() {
     cocinaAma.addEventListener('mouseleave', () => {
         document.body.classList.remove('bg-cocina-ama');
     });
+
+    const sortagram = document.querySelector('#sortagram');
+    sortagram.addEventListener('mouseover', () => {
+        document.body.classList.add('bg-sortagram');
+    });
+    sortagram.addEventListener('mouseleave', () => {
+        document.body.classList.remove('bg-sortagram');
+    });
 });
 
 

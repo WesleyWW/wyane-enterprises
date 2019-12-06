@@ -18,11 +18,14 @@
 .bg-cocina-ama {
     background: #eb3007;
 }
+.bg-sortagram {
+    background: #333;
+}
 
 body {
     // font-size: 10px;
     line-height: 2rem;
-    background: white;
+    background: black;
     // background: rgb(0, 0, 0);
     transition: all .5s ease-in;
 }
@@ -239,7 +242,7 @@ header {
         #titanCBD {
             $titan-color: #00aeff;
             border: 10px solid $titan-color;
-            background: url('/assets/images/titanCBD.png') no-repeat;
+            background: url('/assets/images/titanCBD.png') no-repeat center top;
             // background-position:;
             background-size: cover;
 
@@ -252,7 +255,7 @@ header {
         #becky-stylist {
             $becky-color: #eb0eb4;
             border: 10px solid $becky-color;
-            background: url('/assets/images/becky.png') no-repeat;
+            background: url('/assets/images/becky.png') no-repeat center top;
             background-size: cover;
 
             .project-info {
@@ -264,7 +267,7 @@ header {
         #mt-blog {
             $mt-blog-color: #00637c;
             border: 10px solid $mt-blog-color;
-            background: url('/assets/images/mt-blog.png') no-repeat;
+            background: url('/assets/images/mt-blog.png') no-repeat center;
             background-size: cover;
 
             .project-info {
@@ -276,7 +279,7 @@ header {
         #cocina-ama {
             $cocina-ama-color: #eb3007;
             border: 10px solid $cocina-ama-color;
-            background: url('/assets/images/cocina-ama.png') no-repeat;
+            background: url('/assets/images/cocina-ama.png') no-repeat center top;
             background-size: cover;
 
             .project-info {
@@ -285,15 +288,19 @@ header {
             
         }
 
-    }
-}
+        #sortagram {
+            $sortagram-color: #333;
+            border: 10px solid $sortagram-color;
+            background: url('/assets/images/sortagram.png') no-repeat center top;
+            background-size: cover;
 
-#footer-logo {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 20em;
-    transform: translateY(30%);
+            .project-info {
+                background: $sortagram-color;
+            }
+            
+        }
+
+    }
 }
 
 footer {
@@ -307,6 +314,10 @@ footer {
     font-size: 1.6rem;
 
     #footer-logo {
-        width: 20em;
+        position: absolute;
+        left: 10rem;
+        bottom: 0;
+        width: 15em;
+        transform: translateY(30%);
     }
 }
