@@ -35,6 +35,22 @@ document.addEventListener("DOMContentLoaded", function() {
     becky.addEventListener('mouseleave', () => {
         document.body.classList.remove('bg-becky-stylist');
     });
+
+    const mtBlog = document.querySelector('#mt-blog');
+    mtBlog.addEventListener('mouseover', () => {
+        document.body.classList.add('bg-mt-blog');
+    });
+    mtBlog.addEventListener('mouseleave', () => {
+        document.body.classList.remove('bg-mt-blog');
+    });
+
+    const cocinaAma = document.querySelector('#cocina-ama');
+    cocinaAma.addEventListener('mouseover', () => {
+        document.body.classList.add('bg-cocina-ama');
+    });
+    cocinaAma.addEventListener('mouseleave', () => {
+        document.body.classList.remove('bg-cocina-ama');
+    });
 });
 
 

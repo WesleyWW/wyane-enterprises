@@ -16,6 +16,8 @@ h3 {
 a, p {
   font-size: 1.5rem;
   font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #fff;
 }
 
 section {
@@ -28,8 +30,7 @@ section {
   color: #fff;
   background: #1a3759;
   font-size: 1.4rem;
-  margin: 1rem;
-  padding: 1.5rem;
+  padding: 0.5em;
   border: 3px solid #fff;
   border-radius: 20rem;
 }
@@ -49,17 +50,19 @@ section {
   background: #eb0eb4;
 }
 
-body {
-  font-size: 10px;
-  line-height: 3rem;
-  background: black;
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+.bg-mt-blog {
+  background: #00637c;
 }
 
-body a {
-  text-decoration: none;
-  color: #fff;
+.bg-cocina-ama {
+  background: #eb3007;
+}
+
+body {
+  line-height: 2rem;
+  background: white;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 header {
@@ -71,32 +74,52 @@ header {
   background: black;
   background: linear-gradient(163deg, rgba(0, 0, 0, 0.860973) 20%, #111050 40%, #d76108 80%);
   color: #fff;
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
 }
 
 header #header-logo {
-  width: 25rem;
+  width: 25em;
 }
 
 header #header-text-box {
-  padding: 1.5rem;
   position: absolute;
+  height: 50vh;
   width: 50%;
   right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header #header-text-box h1 {
   padding: 1rem 0;
-  font-size: 4rem;
-  font-family: "Acme", sans-serif;
+  font-size: 3.5em;
   text-transform: uppercase;
 }
 
 header #header-text-box p {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  line-height: 2.4rem;
+  margin-bottom: .5em;
+}
+
+header #header-text-box .resume-link {
+  padding: .5em;
+  color: #fff;
+  background: #d76108;
+  background: linear-gradient(167deg, #d76108 0%, #1a3759 100%);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+header #header-text-box .resume-link:hover {
+  background: #1a3759;
+  background: linear-gradient(167deg, #1a3759 0%, #d76108 100%);
 }
 
 header .social-icons {
@@ -106,8 +129,7 @@ header .social-icons {
 
 header .social-icons .social-icon {
   margin: 0 1rem;
-  height: 4rem;
-  width: 4rem;
+  font-size: 4em;
   color: #fff;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
@@ -120,10 +142,10 @@ header .social-icons .social-icon:hover {
 
 .main-content {
   position: absolute;
-  margin: 48vh 10% 5% 10%;
-  width: 80%;
+  margin: 48vh 5% 5% 5%;
+  width: 90%;
   z-index: 10;
-  background-color: #333;
+  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,12 +156,28 @@ header .social-icons .social-icon:hover {
 }
 
 .main-content .about-content {
+  padding-bottom: 100px;
   width: 40%;
   color: #fff;
 }
 
 .main-content .about-content .about-me {
-  padding: 1rem;
+  padding: 3em;
+  background: #1a3759;
+}
+
+.main-content .about-content .about-me h1 {
+  margin-bottom: 1em;
+}
+
+.main-content .about-content .skills {
+  padding: 3em;
+  width: 100%;
+  background: #d76108;
+}
+
+.main-content .about-content .skills h1 {
+  margin: 0 0 1em 0;
 }
 
 .main-content .projects-content {
@@ -153,6 +191,7 @@ header .social-icons .social-icon:hover {
   position: absolute;
   z-index: 2;
   background: #1a3759;
+  background: linear-gradient(167deg, #1a3759 0%, #d76108 100%);
   color: #fff;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -190,10 +229,24 @@ header .social-icons .social-icon:hover {
   margin: 1.5rem 0;
   padding: .5rem;
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
   background: #1a3759;
-  border: 2px solid white;
+  background: linear-gradient(167deg, #1a3759 0%, #d76108 100%);
+  border: 5px solid #1a3759;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.main-content .projects-content .project .project-buttons .project-btn:hover {
+  background: #d76108;
+  background: linear-gradient(167deg, #d76108 0%, #1a3759 100%);
 }
 
 .main-content .projects-content .project .project-info {
@@ -221,18 +274,39 @@ header .social-icons .social-icon:hover {
 
 .main-content .projects-content .project .project-info img {
   max-height: 80%;
-  width: 40%;
+  width: 30%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .main-content .projects-content .project .project-info .project-info-text {
-  padding: 1rem 3rem;
-  width: 60%;
+  padding: 0.5em;
+  width: 70%;
+}
+
+.main-content .projects-content .project .project-info .project-info-text .project-stack {
+  padding: .5em;
+  top: 0;
+  left: 0;
+  max-width: 70%;
+  position: absolute;
+  background: #1a3759;
+  font-size: 1.2em;
 }
 
 .main-content .projects-content .project .project-info .project-info-text p {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.main-content .projects-content .project .project-info .project-info-text .project-links {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: .5em;
 }
 
 .main-content .projects-content .project .project-info.show {
@@ -250,10 +324,6 @@ header .social-icons .social-icon:hover {
   background: #00aeff;
 }
 
-.main-content .projects-content #titanCBD .btn {
-  background: #00aeff;
-}
-
 .main-content .projects-content #becky-stylist {
   border: 10px solid #eb0eb4;
   background: url("/assets/images/becky.png") no-repeat;
@@ -264,7 +334,53 @@ header .social-icons .social-icon:hover {
   background: #eb0eb4;
 }
 
-.main-content .projects-content #becky-stylist .btn {
-  background: #eb0eb4;
+.main-content .projects-content #mt-blog {
+  border: 10px solid #00637c;
+  background: url("/assets/images/mt-blog.png") no-repeat;
+  background-size: cover;
+}
+
+.main-content .projects-content #mt-blog .project-info {
+  background: #00637c;
+}
+
+.main-content .projects-content #cocina-ama {
+  border: 10px solid #eb3007;
+  background: url("/assets/images/cocina-ama.png") no-repeat;
+  background-size: cover;
+}
+
+.main-content .projects-content #cocina-ama .project-info {
+  background: #eb3007;
+}
+
+#footer-logo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20em;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+footer {
+  width: 100%;
+  color: black;
+  position: fixed;
+  bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+}
+
+footer #footer-logo {
+  width: 20em;
 }
 /*# sourceMappingURL=style.css.map */
