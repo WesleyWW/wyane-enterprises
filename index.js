@@ -11,11 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 const info = project.querySelector('.project-info');
                 info.classList.toggle('show');
             })
-
-            // project.addEventListener('click', () => {
-            //     const info = project.querySelector('.project-info');
-            //     info.classList.toggle('show');
-            // })
         }
     );
 
@@ -44,13 +39,13 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.remove('bg-mt-blog');
     });
 
-    const cocinaAma = document.querySelector('#cocina-ama');
-    cocinaAma.addEventListener('mouseover', () => {
-        document.body.classList.add('bg-cocina-ama');
-    });
-    cocinaAma.addEventListener('mouseleave', () => {
-        document.body.classList.remove('bg-cocina-ama');
-    });
+    // const cocinaAma = document.querySelector('#cocina-ama');
+    // cocinaAma.addEventListener('mouseover', () => {
+    //     document.body.classList.add('bg-cocina-ama');
+    // });
+    // cocinaAma.addEventListener('mouseleave', () => {
+    //     document.body.classList.remove('bg-cocina-ama');
+    // });
 
     const sortagram = document.querySelector('#sortagram');
     sortagram.addEventListener('mouseover', () => {
