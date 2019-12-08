@@ -1,3 +1,5 @@
+import './styles/style.scss';
+
 document.addEventListener("DOMContentLoaded", function() { 
     const projects = document.querySelectorAll('.project');
     projects.forEach(
