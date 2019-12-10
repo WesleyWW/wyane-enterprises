@@ -16,6 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     );
 
+    const larosa = document.querySelector('#larosa');
+    larosa.addEventListener('mouseover', () => {
+        document.body.classList.add('bg-larosa');
+    });
+    larosa.addEventListener('mouseleave', () => {
+        document.body.classList.remove('bg-larosa');
+    });
 
     const titanCBD = document.querySelector('#titanCBD');
     titanCBD.addEventListener('mouseover', () => {
@@ -41,13 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.remove('bg-mt-blog');
     });
 
-    // const cocinaAma = document.querySelector('#cocina-ama');
-    // cocinaAma.addEventListener('mouseover', () => {
-    //     document.body.classList.add('bg-cocina-ama');
-    // });
-    // cocinaAma.addEventListener('mouseleave', () => {
-    //     document.body.classList.remove('bg-cocina-ama');
-    // });
+    
 
     const sortagram = document.querySelector('#sortagram');
     sortagram.addEventListener('mouseover', () => {

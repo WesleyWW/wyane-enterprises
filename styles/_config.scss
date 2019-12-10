@@ -6,11 +6,11 @@ $headline-text: 'Acme', sans-serif;
 $standard-text: 'Lato', sans-serif;
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: $headline-text;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: $headline-text;
 }
 h3 {
@@ -19,7 +19,7 @@ h3 {
 }
 
 a, p {
-    font-size: 1.5rem;
+    font-size: 1.6em;
     font-family: $standard-text;
     text-decoration: none;
     color: #fff;
@@ -56,8 +56,8 @@ section {
         @content;
     }
 }
-@mixin mediaXl {
-    @media screen and (max-width: 485) {
+@mixin mediaSm {
+    @media screen and (max-width: 485px) {
         @content;
     }
 }

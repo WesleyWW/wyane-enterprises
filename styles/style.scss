@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+.bg-larosa {
+    background: #c59d5f;
+}
 .bg-titanCBD {
     background: #00aeff;
 }
@@ -22,9 +25,12 @@
     background: #333;
 }
 
+html {
+    font-size: 10px;
+    line-height: 1.5rem;
+}
+
 body {
-    // font-size: 10px;
-    line-height: 2rem;
     background: black;
     // background: rgb(0, 0, 0);
     transition: all .5s ease-in;
@@ -241,6 +247,18 @@ header {
 
 
       //PROJECT INFO SECTIONS
+        #larosa {
+            $larosa-color: #c59d5f;
+            border: 10px solid $larosa-color;
+            background: url('../assets/images/larosa.png') no-repeat center top;
+            background-size: cover;
+
+            .project-info {
+                background: $larosa-color;
+            }
+        
+        }
+
         #titanCBD {
             $titan-color: #00aeff;
             border: 10px solid $titan-color;
@@ -315,23 +333,35 @@ header {
             width: 100%;
         }
     }
+    @include mediaSm {
+        flex-direction: column;
+        padding-bottom: 10vh;
+ 
+        .about-content {
+            width: 100%;
+        }
+
+        .projects-content {
+            width: 100%;
+        }
+    }
 }
 
 footer {
     width: 100%;
     color: black;
     position: fixed;
-    bottom: 1em;
+    bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
 
     #footer-logo {
         position: absolute;
         left: 10rem;
         bottom: 0;
-        width: 15em;
+        width: 25rem;
         transform: translateY(30%);
     }
 }
