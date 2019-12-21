@@ -42,6 +42,10 @@ section {
           box-sizing: border-box;
 }
 
+.bg-wyane-realty {
+  background: #28b894;
+}
+
 .bg-larosa {
   background: #c59d5f;
 }
@@ -333,6 +337,16 @@ header .social-icons .social-icon:hover {
 .main-content .projects-content .project .project-info.show {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.main-content .projects-content #wyane-realty {
+  border: 10px solid #28b894;
+  background: url("../assets/images/wyane-realty.png") no-repeat center top;
+  background-size: cover;
+}
+
+.main-content .projects-content #wyane-realty .project-info {
+  background: #28b894;
 }
 
 .main-content .projects-content #larosa {

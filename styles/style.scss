@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+.bg-wyane-realty {
+    background: #28b894;
+}
 .bg-larosa {
     background: #c59d5f;
 }
@@ -256,6 +259,18 @@ header {
 
 
       //PROJECT INFO SECTIONS
+      #wyane-realty {
+            $wyane-realty-color: #28b894;
+            border: 10px solid $wyane-realty-color;
+            background: url('../assets/images/wyane-realty.png') no-repeat center top;
+            background-size: cover;
+
+            .project-info {
+                background: $wyane-realty-color;
+            }
+        
+        }
+
         #larosa {
             $larosa-color: #c59d5f;
             border: 10px solid $larosa-color;

@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     );
 
+    const wyaneRealty = document.querySelector('#wyane-realty');
+    wyaneRealty.addEventListener('mouseover', () => {
+        document.body.classList.add('bg-wyane-realty');
+    });
+    wyaneRealty.addEventListener('mouseleave', () => {
+        document.body.classList.remove('bg-wyane-realty');
+    });
+
     const larosa = document.querySelector('#larosa');
     larosa.addEventListener('mouseover', () => {
         document.body.classList.add('bg-larosa');
